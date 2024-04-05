@@ -5,7 +5,7 @@ public class EX04 {
         Car bus = new Bus();
         System.out.println(bus.getClass()); //버스나온다 => 자식객체의 추가기능을 포기해야함
         bus.ride();
-        
+
 //        Bus bus1 = new Car();
         Taxi taxi = new Taxi();
         taxi.ride();
@@ -28,9 +28,6 @@ class Car{
     }
 }
 
-class Taxi extends Car{
-}
-
 class Bus extends Car{
     Bus(){
         super();
@@ -39,3 +36,9 @@ class Bus extends Car{
         System.out.println("부릉부릉");
     }
 }
+class Taxi extends Car{
+    Taxi(){
+        super();
+    }
+}
+

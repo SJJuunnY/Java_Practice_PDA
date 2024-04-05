@@ -4,11 +4,8 @@ public class EX03 {
         User son = new User("소농민","야~ 내가 핸드폰 켜볼게");
         User beckham = new User("벡컴","let me turn on");
         
-        (new Phone()).sound(); //일반폰띠리링
-        
         //한국폰 사기
         SamsungPhone koreaPhone = new SamsungPhone("삐리릭");
-//        System.out.println(koreaPhone.getBrand());
         son.buy(koreaPhone);
         
         // 영국폰 사기
@@ -45,6 +42,9 @@ class SamsungPhone extends Phone{
     SamsungPhone(String sound){
         this.sound = sound;
     }
+    SamsungPhone(){
+        this.sound = "빵상";
+    }
     String getBrand(){
         return brand;
     }
@@ -64,6 +64,7 @@ class User{
     String userName;
     Phone phone;
     String turnOnSpeaking;
+
     User(String name, String turnOnSpeaking){
         this.userName = name;
         this.turnOnSpeaking = turnOnSpeaking;
