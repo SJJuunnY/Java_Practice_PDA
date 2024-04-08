@@ -21,3 +21,4 @@ DB를 대체할 클래스 DAO (DB 기능은 Map의 메소드로 대체)
 - 0
     - [종료]
 ## ERD
+![image](https://github.com/SJJuunnY/Java_Practice_PDA/assets/118606256/cc54ddd4-3bb8-4879-901c-a9a8e3f84eba)
